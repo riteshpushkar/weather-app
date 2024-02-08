@@ -1,3 +1,6 @@
+## project Image
+(https://github.com/riteshpushkar/weather-app/assets/79689579/2c6814f1-263a-4568-83b3-3190af13b1ac)
+
 # Weather App
 
 This is a simple web application that fetches weather information for a given city using the OpenWeatherMap API. Users can input a city name, and the app will display details such as temperature, pressure, humidity, weather condition, sunrise, and sunset times.
@@ -47,8 +50,5 @@ pip install -r requirements.txt
 
 - Weather data provided by [OpenWeatherMap](https://openweathermap.org/).
 - Icons from [Font Awesome](https://fontawesome.com/).
-
-project Image
-(https://github.com/riteshpushkar/weather-app/assets/79689579/2c6814f1-263a-4568-83b3-3190af13b1ac)
 
 
