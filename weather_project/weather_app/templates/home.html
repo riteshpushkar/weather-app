@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 300px;
+            height: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #weather-info {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            text-align: left;
+            padding: 10px;
+        }
+
+        #weather-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        #footer {
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <form id="weather-form" method="get">
+            <label for="city">Enter city name:</label>
+            <input type="text" id="city" name="city" placeholder="Enter city name" required><br>
+            <button type="submit">Get Weather</button>
+        </form>
+        
+        <div id="weather-info">
+            <p><strong>City Name:</strong> {{city}}</p> 
+            <p><strong>Temperature:</strong> {{temperature}}°C</p> 
+            <p><strong>Pressure:</strong> {{pressure}} hPa</p> 
+            <p><strong>Humidity:</strong> {{humidity}}%</p> 
+            <p><strong>Weather:</strong> {{weather}}</p> 
+            <p><strong>Sunrise:</strong> {{sunrise}}</p> 
+            <p><strong>Sunset:</strong> {{sunset}}</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        Powered by OpenWeatherMap
+    </div>
+
+    <script>
+        // JavaScript can be added here for any additional dynamic behavior
+    </script>
+</body>
+</html>
